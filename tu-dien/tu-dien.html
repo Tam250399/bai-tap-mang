@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ điển</title>
+</head>
+
+<body>
+    <input id="acs" type="text">
+    <button type="button" value="nhập" onclick="myFunction()">search</button>
+    <p id="abc"></p>
+    <script>
+        function myFunction() {
+            let tiengviet = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            let a = document.getElementById("acs").value;
+            let english = ["one", "two", ' three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']
+            for (var i = 0; i < english.length; i++) {
+                if (a == english[i]) {
+                    document.getElementById('abc').innerHTML = tiengviet[i]
+                    break;
+                } else {
+                    if (a == tiengviet[i]) {
+                        document.getElementById('abc').innerHTML = english[i]
+                        break;
+                    } else {
+                        document.getElementById('abc').innerHTML = "not found"
+
+                    }
+
+
+                }
+
+            }
+        }
+    </script>
+</body>
+
+</html>
