@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("jfdhkgkm")
+
+        function myFunction(a) {
+            let dem = 0;
+            for (let i = 0; i < a.length; i++) {
+                if (a[i] == a[a.length - 1 - i]) {
+                    dem += 1;
+
+                } else {
+                    alert("khong doi xung")
+                    break;
+                }
+            }
+            if (dem == Math.floor(a.length)) {
+                alert("doi xung")
+            }
+        }
+        myFunction(a)
+    </script>
+</body>
+
+</html>
